@@ -119,9 +119,7 @@ The XOR gate produces a logic HIGH only when the two input signals are different
 
 ### Boolean Expression
 
-\[
-Y = A \oplus B = \overline{A}B + A\overline{B}
-\]
+$$Y = A \oplus B = \overline{A}B + A\overline{B}$$
 
 ### Truth Table
 
@@ -164,14 +162,7 @@ Y = A \oplus B = \overline{A}B + A\overline{B}
 The Full Adder is the arithmetic core of the ALU. It performs one-bit binary addition using three inputs: **A**, **B**, and **Cin**. The implemented architecture uses 28 transistors and generates two outputs: **Sum** and **Carry Out (Cout)**.
 
 ### Equations
-
-\[
-Sum = A \oplus B \oplus Cin
-\]
-
-\[
-Cout = AB + Cin(A \oplus B)
-\]
+$$Cout = A \cdot B + Cin \cdot (A \oplus B)$$$$Sum = \overline{Cout} \cdot (A + B + Cin) + A \cdot B \cdot Cin$$
 
 ### Circuit Schematic
 
@@ -213,7 +204,7 @@ The CMOS 2:1 Multiplexer is the fundamental building block used to realize the 4
 #### Boolean Expression
 
 \[
-Y=\overline{S_0}A+S_0B
+$$Y = \overline{S_0} \cdot A + S_0 \cdot B$$
 \]
 
 #### Truth Table
@@ -385,7 +376,7 @@ The observed output should correspond to the expected arithmetic or logical oper
 ## 4-Bit ALU Block Diagram
 
 <p align="center">
-<img src="Circuit_waveform/ALU_4bit.png" width="850">
+<img src="Circuit_waveform/alu_4bit.png" width="850">
 </p>
 
 <p align="center">
@@ -396,11 +387,11 @@ The observed output should correspond to the expected arithmetic or logical oper
 ## 4-Bit ALU Simulation Waveform
 
 <p align="center">
-<img src="Circuit_waveform/ALU_4bit_waveform.png" width="950">
+<img src="Circuit_waveform/alu_4bit_waveform.png" width="950">
 </p>
 
 <p align="center">
-<b>Figure 16.</b> Functional verification of the 4-Bit CMOS ALU using random input vectors.
+<b>Figure 16.</b> Functional verification of the 4-Bit CMOS ALU using input combinations A:1010 and B:1101 .
 </p>
 
 ---
