@@ -47,7 +47,7 @@ Y = A.B
 ### Circuit Schematic
 
 <p align="center">
-  <img src="Images/and_gate_schematic.png" width="700">
+  <img src="Circuit_waveform/and.png" width="700">
 </p>
 
 <p align="center">
@@ -59,7 +59,7 @@ Y = A.B
 ### Simulation Waveform
 
 <p align="center">
-  <img src="Images/and_gate_waveform.png" width="800">
+  <img src="Circuit_waveform/and_waveform.png" width="800">
 </p>
 
 <p align="center">
@@ -91,7 +91,7 @@ Y = A + B
 ### Circuit Schematic
 
 <p align="center">
-<img src="Images/or_gate_schematic.png" width="700">
+<img src="Circuit_waveform/or.png" width="700">
 </p>
 
 <p align="center">
@@ -101,7 +101,7 @@ Y = A + B
 ### Simulation Waveform
 
 <p align="center">
-<img src="Images/or_gate_waveform.png" width="800">
+<img src="Circuit_waveform/or_waveform.png" width="800">
 </p>
 
 <p align="center">
@@ -137,7 +137,7 @@ Y = A \oplus B = \overline{A}B + A\overline{B}
 ### Circuit Schematic
 
 <p align="center">
-  <img src="Images/xor_gate_schematic.png" width="700">
+  <img src="Circuit_waveform/xor.png" width="700">
 </p>
 
 <p align="center">
@@ -149,7 +149,7 @@ Y = A \oplus B = \overline{A}B + A\overline{B}
 ### Simulation Waveform
 
 <p align="center">
-  <img src="Images/xor_gate_waveform.png" width="850">
+  <img src="Circuit_waveform/xor_waveform.png" width="850">
 </p>
 
 <p align="center">
@@ -176,7 +176,7 @@ Cout = AB + Cin(A \oplus B)
 ### Circuit Schematic
 
 <p align="center">
-<img src="Images/fulladder_schematic.png" width="750">
+<img src="Circuit_waveform/fa.png" width="750">
 </p>
 
 <p align="center">
@@ -186,7 +186,7 @@ Cout = AB + Cin(A \oplus B)
 ### Simulation Waveform
 
 <p align="center">
-<img src="Images/fulladder_waveform.png" width="900">
+<img src="Circuit_waveform/fa_waveform.png" width="900">
 </p>
 
 <p align="center">
@@ -226,7 +226,7 @@ Y=\overline{S_0}A+S_0B
 #### Circuit Schematic
 
 <p align="center">
-<img src="Images/mux2_schematic.png" width="700">
+<img src="Circuit_waveform/2to1.png" width="700">
 </p>
 
 <p align="center">
@@ -236,7 +236,7 @@ Y=\overline{S_0}A+S_0B
 #### Simulation Waveform
 
 <p align="center">
-<img src="Images/mux2_waveform.png" width="850">
+<img src="Circuit_waveform/2to1_waveform.png" width="850">
 </p>
 
 <p align="center">
@@ -259,7 +259,7 @@ This hierarchical implementation demonstrates the modularity and reusability of 
 #### Block Diagram
 
 <p align="center">
-<img src="Images/mux4_block_diagram.png" width="700">
+<img src="Circuit_waveform/4to1.png" width="700">
 </p>
 
 <p align="center">
@@ -268,15 +268,6 @@ This hierarchical implementation demonstrates the modularity and reusability of 
 
 ---
 
-#### Transistor-Level Circuit
-
-<p align="center">
-<img src="Images/mux4_schematic.png" width="700">
-</p>
-
-<p align="center">
-<b>Figure 12.</b> Transistor-level CMOS implementation of the 4:1 Multiplexer.
-</p>
 
 ---
 
@@ -294,7 +285,7 @@ This hierarchical implementation demonstrates the modularity and reusability of 
 #### Simulation Waveform
 
 <p align="center">
-<img src="Images/mux4_waveform.png" width="850">
+<img src="Circuit_waveform/4to1_waveform.png" width="850">
 </p>
 
 <p align="center">
@@ -318,7 +309,6 @@ The following simulation parameters were used for functional verification:
 | Technology | 180 nm CMOS |
 | Supply Voltage (VDD) | 1.8 V |
 | Logic Style | Static CMOS |
-| Load Capacitance | 5 fF |
 | Carry Input (Cin) | Logic LOW (0) |
 | Simulation Type | Transient Analysis |
 | Simulation Time | 80 ns |
@@ -330,7 +320,7 @@ Independent pulse voltage sources were applied to the input operands (**A** and 
 ## 1-Bit ALU Block Diagram
 
 <p align="center">
-<img src="Images/alu_block_diagram.png" width="850">
+<img src="Circuit_waveform/ALU_1bit.png" width="850">
 </p>
 
 <p align="center">
@@ -342,7 +332,7 @@ Independent pulse voltage sources were applied to the input operands (**A** and 
 ## Simulation Waveform
 
 <p align="center">
-<img src="Images/alu_waveform.png" width="950">
+<img src="Circuit_waveform/ALU_1bit_waveform.png" width="950">
 </p>
 
 <p align="center">
@@ -392,10 +382,21 @@ The observed output should correspond to the expected arithmetic or logical oper
 
 ---
 
+## 4-Bit ALU Block Diagram
+
+<p align="center">
+<img src="Circuit_waveform/ALU_4bit.png" width="850">
+</p>
+
+<p align="center">
+<b>Figure 14.</b> Block diagram of the proposed 1-Bit CMOS ALU.
+</p>
+
+
 ## 4-Bit ALU Simulation Waveform
 
 <p align="center">
-<img src="Images/alu4_random_waveform.png" width="950">
+<img src="Circuit_waveform/ALU_4bit_waveform.png" width="950">
 </p>
 
 <p align="center">
