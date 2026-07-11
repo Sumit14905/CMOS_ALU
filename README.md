@@ -111,6 +111,54 @@ Y = A + B
 
 
 ---
+## 3. CMOS XOR Gate
+
+The **Exclusive-OR (XOR) gate** is a fundamental combinational logic circuit widely used in arithmetic circuits, parity generators, error detection systems, and digital communication applications. In this project, the XOR gate forms one of the primary logical operations of the ALU and also serves as an essential component of the Full Adder.
+
+The XOR gate produces a logic HIGH only when the two input signals are different. When both inputs are identical, the output remains LOW. The circuit is implemented using **static CMOS logic** in **180 nm technology**, providing full voltage swing, high noise immunity, and negligible static power consumption.
+
+### Boolean Expression
+
+\[
+Y = A \oplus B = \overline{A}B + A\overline{B}
+\]
+
+### Truth Table
+
+| A | B | Y |
+|:-:|:-:|:-:|
+| 0 | 0 | 0 |
+| 0 | 1 | 1 |
+| 1 | 0 | 1 |
+| 1 | 1 | 0 |
+
+---
+
+### Circuit Schematic
+
+<p align="center">
+  <img src="Images/xor_gate_schematic.png" width="700">
+</p>
+
+<p align="center">
+<b>Figure 5.</b> Transistor-level CMOS implementation of the XOR gate.
+</p>
+
+---
+
+### Simulation Waveform
+
+<p align="center">
+  <img src="Images/xor_gate_waveform.png" width="850">
+</p>
+
+<p align="center">
+<b>Figure 6.</b> Transient simulation of the CMOS XOR gate.
+</p>
+
+---
+
+
 ## 4. 28-Transistor CMOS Full Adder
 
 The Full Adder is the arithmetic core of the ALU. It performs one-bit binary addition using three inputs: **A**, **B**, and **Cin**. The implemented architecture uses 28 transistors and generates two outputs: **Sum** and **Carry Out (Cout)**.
